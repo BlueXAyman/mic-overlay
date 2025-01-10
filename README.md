@@ -1,11 +1,11 @@
 # Installation Instructions
 
 Follow these steps to set up and use the application:
-## Steps
+## Steps (dev)
 1- Install and compile this app into an .exe
 (built using electron.js, refer to their docs for instructions on how to use this code)
 
-## Steps
+## Steps (after compiling)
 
 1. **Install** the required driver from [VB-Audio Driver Pack](https://download.vb-audio.com/Download_CABLE/VBCABLE_Driver_Pack45.zip).
 2. **Restart your computer.**  
