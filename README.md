@@ -1,6 +1,9 @@
 # Installation Instructions
 
 Follow these steps to set up and use the application:
+## Steps
+1- Install and compile this app into an .exe
+(built using electron.js, refer to their docs for instructions on how to use this code)
 
 ## Steps
 
