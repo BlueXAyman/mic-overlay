@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mic Overlay</title>
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+  <div class="titlebar">
+    <div class="window-controls left">
+      <button id="zoomOutButton" class="control-button">−</button>
+      <button id="zoomInButton" class="control-button">+</button>
+    </div>
+    <div class="window-controls right">
+      <button id="minimizeButton" class="control-button">─</button>
+      <button id="quitButton" class="control-button">✕</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <img src="icon.ico" alt="Mic Overlay" class="app-icon">
+      <div class="app-info">
+        <h1>Mic Overlay</h1>
+        <p class="motto">Now you have a mic</p>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="left-panel">
+        <div class="section">
+          <h3>Voice Settings</h3>
+          <div class="voice-controls">
+            <select id="voiceSelect">
+              <option value="">Loading voices...</option>
+            </select>
+            
+            <div class="slider-container">
+              <span class="slider-label">Rate:</span>
+              <input type="range" id="rateSlider" min="0.5" max="2" step="0.1" value="1">
+              <span id="rateValue" class="value-display">1.0</span>
+            </div>
+
+            <div class="slider-container">
+              <span class="slider-label">Pitch:</span>
+              <input type="range" id="pitchSlider" min="0.5" max="2" step="0.1" value="1">
+              <span id="pitchValue" class="value-display">1.0</span>
+            </div>
+
+            <div class="slider-container">
+              <span class="slider-label">Volume:</span>
+              <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="1">
+              <span id="volumeValue" class="value-display">1.0</span>
+            </div>
+
+            <button id="saveVoiceSettings" class="modern-button">Save Voice Settings</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-panel">
+        <div class="section">
+          <h3>System Requirements</h3>
+          <div class="requirement-item">
+            <span id="vbStatus">Checking VB-Cable...</span>
+            <span id="vbIcon">⏳</span>
+          </div>
+          <div id="vbInstallGuide" style="display: none;">
+            <p>VB-Cable is required for this application to work as a virtual microphone.</p>
+            <a href="https://vb-audio.com/Cable/" target="_blank">Download VB-Cable</a>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>Keyboard Shortcut</h3>
+          <div class="shortcut-container">
+            <input type="text" id="shortcutInput" readonly placeholder="Click to set shortcut...">
+            <button id="saveShortcut" class="modern-button">Save Hotkey</button>
+            <button id="clearShortcut" class="modern-button secondary">Clear</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="action-buttons">
+      <button id="startButton" class="modern-button primary">Start Service</button>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>Made by <a href="https://xayman.net" target="_blank">xAyman</a></p>
+        <p>Mic Overlay © 2024. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="settings.js"></script>
+</body>
+</html> 
